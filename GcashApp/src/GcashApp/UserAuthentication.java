@@ -9,11 +9,11 @@ import java.sql.Statement;
 
 public class UserAuthentication {
 	
-	int id;
+	private int id;
 	
-	String jdbcURL = "jdbc:mysql://localhost:3306/gcashappdb";
-	String username = "root";
-	String pass = "root";
+	private String jdbcURL = "jdbc:mysql://localhost:3306/gcashappdb";
+	private String username = "root";
+	private String pass = "root";
 	
 	public void Registration(String name, String email, String number, String pin) {
 	
