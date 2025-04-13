@@ -5,13 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class Cashin {
+public class Cashin extends DbContext  {
 	
-	int id;
-	String jdbcURL = "jdbc:mysql://localhost:3306/gcashappdb";
-	String username = "root";
-	String pass = "root";
-
 	 public void cashin(int userId, double amount) {
 	        try {
 	        	Connection conn = DriverManager.getConnection(jdbcURL,username,pass);

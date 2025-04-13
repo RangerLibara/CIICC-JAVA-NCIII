@@ -6,12 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CheckBalance {
+public class CheckBalance extends DbContext  {
 	
-	int id;
-	String jdbcURL = "jdbc:mysql://localhost:3306/gcashappdb";
-	String username = "root";
-	String pass = "root";
 	
 	 public double checkBalance(int userId) {
 	        try {

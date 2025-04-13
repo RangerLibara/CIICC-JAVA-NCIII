@@ -7,15 +7,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class UserAuthentication {
-	
-	int id;
-	String jdbcURL = "jdbc:mysql://localhost:3306/gcashappdb";
-	String username = "root";
-	String pass = "root";
-	
+public class UserAuthentication extends DbContext  {
 
-	
     public void register(String email, String name, String phoneNumber, String pin) {
         try  {
         	Connection conn = DriverManager.getConnection(jdbcURL,username,pass);

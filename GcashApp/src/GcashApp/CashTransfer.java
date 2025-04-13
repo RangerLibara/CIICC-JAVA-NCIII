@@ -5,12 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class CashTransfer {
+public class CashTransfer extends DbContext {
 	
-	int id;
-	String jdbcURL = "jdbc:mysql://localhost:3306/gcashappdb";
-	String username = "root";
-	String pass = "root";
 	
     public void cashTransfer(int senderId, int recipientId, double amount) {
         try {
